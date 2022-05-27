@@ -1,0 +1,22 @@
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es3",
+    "noImplicitAny": true,
+    "outDir": "built",
+    "rootDir": ".",
+    "sourceMap": false,
+    "strict": true,
+    "strictNullChecks": false,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["./src/*"],
+    }
+  },
+}
